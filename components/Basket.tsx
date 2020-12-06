@@ -1,6 +1,9 @@
 import React from "react"
 import { useSelector } from "react-redux"
-import { store, remove } from "../store"
+import { store, remove, increase, decrease } from "../store"
+import AddCircleIcon from '@material-ui/icons/AddCircle';
+import RemoveCircleIcon from '@material-ui/icons/RemoveCircle';
+
 
 import { createStyles, Theme, makeStyles } from "@material-ui/core/styles"
 import {
@@ -83,6 +86,28 @@ const Basket = () => {
                   >
                     <DeleteIcon />
                   </IconButton>
+
+                  <IconButton
+                    edge="end"
+                    aria-label="delete"
+                    onClick={() => store.dispatch(increase({ id: product.id }))}
+                  >
+                    <AddCircleIcon />
+                  </IconButton>
+
+                  {`   ${product.count} `}
+
+                  <IconButton
+                    edge="end"
+                    aria-label="delete"
+                    onClick={() => store.dispatch(decrease({ id: product.id }))}
+                  >
+                    <RemoveCircleIcon />
+                  </IconButton>
+
+                  
+                  Price: &pound; {product.price * product.count / 100}
+
                 </ListItemSecondaryAction>
               </ListItem>
               <Divider variant="inset" component="li" />
@@ -95,9 +120,9 @@ const Basket = () => {
             {(
               products
                 .filter(product => product.added)
-                .reduce((acc, current) => (acc += current.price), 0) / 100
+                .reduce((acc, current) => (acc += current.price*current.count), 0) / 100
             ).toFixed(2)}
-            
+
           </Typography>
         </ListItem>
       </List>

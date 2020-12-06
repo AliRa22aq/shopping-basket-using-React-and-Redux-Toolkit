@@ -10,6 +10,15 @@ import { Product } from "../components/Product"
 const ShoppingBasket = () => {
   return (
     <Provider store={store}>
+      <div style={{
+        textAlign: "center",
+        paddingTop: '20px',
+        fontFamily: 'Arial',
+        fontSize: "2rem",
+      }}>
+        The Painting Shop 
+      </div>
+      
     <Container maxWidth="md">
       <Box mt={5} mb={5}>
         <Product />

@@ -85,7 +85,7 @@ const Product = () => {
   const classes = useStyles({})
 
   const products = useSelector((state: ProductItem[]) => state);
-  
+  console.log(products)
 
   return (
     <div className={classes.root}>

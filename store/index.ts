@@ -25,15 +25,40 @@ const basketSlice = createSlice({
 
         return {
           ...item,
+          count:1,
           added: false
         }
       })
-    }
-  }
-})
+    },
+    increase: (state,action) => {
+      state.map(item => { 
+          if (item.id === action.payload.id) 
+            { item.count = item.count+1;
+                 console.log(item.count)
+            }
+          
+    })
+  },
+  decrease: (state,action) => {
+    state.map(item => { 
+        if (item.id === action.payload.id) 
+          { 
+            if(item.count==1){
+              return item
+            }
+            else {
+            item.count = item.count-1;
+               console.log(item.count)
+          }}
+        
+  })
+}
+
+ }}
+)
 
 const store = configureStore({ reducer: basketSlice.reducer })
 
-export const { add, remove } = basketSlice.actions
+export const { add, remove, increase, decrease } = basketSlice.actions
 
 export { basketSlice, store }
