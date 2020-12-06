@@ -91,11 +91,13 @@ const Basket = () => {
         <ListItem className={classes.listItem}>
           <Typography variant="subtitle1" className={classes.total}>
             &pound;
+            
             {(
               products
                 .filter(product => product.added)
                 .reduce((acc, current) => (acc += current.price), 0) / 100
             ).toFixed(2)}
+            
           </Typography>
         </ListItem>
       </List>
