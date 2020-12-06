@@ -106,7 +106,7 @@ const Basket = () => {
                   </IconButton>
 
                   
-                  Price: &pound; {product.price * product.count / 100}
+                  Pricee: &pound; {product.price * product.count / 100}
 
                 </ListItemSecondaryAction>
               </ListItem>
