@@ -1,0 +1,36 @@
+[debug] [2021-02-20T21:13:14.898Z] ----------------------------------------------------------------------
+[debug] [2021-02-20T21:13:14.902Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Ali Razzaq\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-02-20T21:13:14.903Z] CLI Version:   9.4.0
+[debug] [2021-02-20T21:13:14.903Z] Platform:      win32
+[debug] [2021-02-20T21:13:14.903Z] Node Version:  v15.3.0
+[debug] [2021-02-20T21:13:14.905Z] Time:          Sun Feb 21 2021 02:13:14 GMT+0500 (Pakistan Standard Time)
+[debug] [2021-02-20T21:13:14.905Z] ----------------------------------------------------------------------
+[debug] [2021-02-20T21:13:14.905Z] 
+[debug] [2021-02-20T21:13:14.919Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-20T21:13:14.921Z] > authorizing via signed-in user
+[debug] [2021-02-20T21:13:14.921Z] [iam] checking project spacex-app-1987e for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-02-20T21:13:14.927Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-02-20T21:13:14.928Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-20T21:13:15.427Z] <<< HTTP RESPONSE 200 {"date":"Sat, 20 Feb 2021 21:13:15 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-20T21:13:15.459Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/spacex-app-1987e:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-02-20T21:13:17.092Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 20 Feb 2021 21:13:17 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1200","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-20T21:13:17.095Z] > refreshing access token with scopes: []
+[debug] [2021-02-20T21:13:17.095Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-20T21:13:17.509Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Sat, 20 Feb 2021 21:13:17 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-20T21:13:17.518Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/spacex-app-1987e [none]
+[debug] [2021-02-20T21:13:18.054Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/spacex-app-1987e 200
+[debug] [2021-02-20T21:13:18.054Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/spacex-app-1987e {"projectId":"spacex-app-1987e","projectNumber":"86772499914","displayName":"SpaceX-App","name":"projects/spacex-app-1987e","resources":{"hostingSite":"spacex-app-1987e","realtimeDatabaseInstance":"spacex-app-1987e"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'spacex-app-1987e'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-02-20T21:13:18.066Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-02-20T21:13:18.067Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-20T21:13:18.482Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sat, 20 Feb 2021 21:13:18 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-20T21:13:18.487Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/spacex-app-1987e/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-02-20T21:13:20.562Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 20 Feb 2021 21:13:20 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
